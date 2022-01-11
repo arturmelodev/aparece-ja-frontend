@@ -1,9 +1,9 @@
-import 'package:apareceja/home_page.dart';
-import 'package:apareceja/signin_page.dart';
-import 'package:apareceja/signup_page.dart';
+import 'package:apareceja/screens/home_page.dart';
+import 'package:apareceja/screens/signin_page.dart';
+import 'package:apareceja/screens/signup_page.dart';
 import 'package:flutter/material.dart';
 
-import 'app_controller.dart';
+import 'controllers/app_controller.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -19,8 +19,6 @@ class AppWidget extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const SignInPage(),
-        '/home': (context) => const HomePage(),
-        '/signup': (context) => const SignUpPage(),
       },
     );
   }
